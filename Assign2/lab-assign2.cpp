@@ -28,7 +28,7 @@ int main()
         cin >> stud[i].sem;
         if (i == 4)
         {
-            cout << "You have Entered all the Enteries" << endl;
+            cout << "You have Entered all the Enteries" << endl << endl;
         }
     }
 
@@ -47,14 +47,14 @@ int main()
 
     //Taking threshold CGPI
     float k;
-    cout << "Enter the threshold CGPI" << endl;
+    cout << endl << "Enter the threshold CGPI" << endl;
     cin >> k;
 
     // Opening file to read data
     ifstream f("example.txt");
     string s;
 
-    cout << "These are the Students with CGPI greater than Threshold CGPI:" << endl;
+    cout << endl << "These are the Students with CGPI greater than Threshold CGPI:" << endl;
     for (int i = 1; i <= LINE; i++)
     {
         if (stud[i - 1].cgpi > k)
@@ -71,11 +71,11 @@ int main()
     //Entering data at a desired Position and storing it
     Student S[6];
     int pos;
-    cout << "Enter the position at which you want to enter the data :" << endl;
+    cout << endl << "Enter the position at which you want to enter the data :" << endl;
     cin >> pos;
     if (pos > 0 && pos < 6)
     {
-        cout << "The value of Position is valid Processing..." << endl;
+        cout << "The value of Position is valid Processing..." << endl << endl;
     }
     else
     {
@@ -86,7 +86,7 @@ int main()
     {
         if (j == pos - 1)
         {
-            cout << "Enter the data for New Position " << pos << endl;
+            cout << "Enter the Name, Roll no, CGPI and Semester for New Position " << pos << endl;
             cin.ignore();
             getline(cin, S[j].name, '\n');
             cin >> S[j].roll;
@@ -112,7 +112,7 @@ int main()
         else
             cout << "Unable to open file" << endl;
     }
-    cout << "Your Data has been Updated in file" << endl;
+    cout << endl << "Your Data has been Updated in file" << endl;
     ofs.close();
     return 0;
 }
