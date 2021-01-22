@@ -1,0 +1,8 @@
+cin just after getline is causing input buffer with '\n' and that's why first character of first input string is dissapearing.
+here I've used stringstream of sstream header and has taken all input in getline which doesnt cause any input buffer and then set the value of respective variable using stringstream and it is working perfectly fine.
+## hence i can say it is the best method when you are taking input string in loop along with other types of input.
+## USEFUL RESOURCES FROM WHICH I'VE TAKEN REFERENCE
+- (https://stackoverflow.com/questions/40984752/c-input-string-with-spaces)
+- (https://stackoverflow.com/questions/7786994/c-getline-isnt-waiting-for-input-from-console-when-called-multiple-times)
+- (https://www.geeksforgeeks.org/advanced-c-boost-library/)
+- (https://stackoverflow.com/questions/5781597/incomplete-type-is-not-allowed-stringstream#:~:text=An%20incomplete%20type%20error%20is,%7B%20...%20%7D%3B%20).)
