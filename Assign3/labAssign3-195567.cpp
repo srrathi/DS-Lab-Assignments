@@ -44,11 +44,11 @@ public:
             }
             else if (p[k] > num)
             {
-                end--;
+                end=k;
             }
             else if (p[k] < num)
             {
-                start++;
+                start=k;
             }
         }
 
