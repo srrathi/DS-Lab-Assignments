@@ -1,1 +1,0 @@
-each lab assignment is in its particular folder according to sequence and those one in which i got to learn something new are marked as important.
